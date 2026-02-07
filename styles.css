@@ -1,54 +1,34 @@
 #grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    "one  one  one one"
-    "two  three four four"
-    "two five five six"
-    "two seven eight nine"
-    "two ten  ten  ten";
-	/* background-color:green; */
-	gap:10px;
-	padding:10px;
-	height:100vh;
-	
-.item{
-	background-color:green;
-	color:white
+  grid-template-rows: repeat(5, 124px);
+  gap: 10px;
 }
+
+/* base style */
+.item {
+  background-color: green;
+  color: white;
+}
+
+/* grid spans required by test */
+
 .item-one {
-	grid-area : one;
+  grid-column: span 4;
 }
+
 .item-two {
-	grid-area : two;
+  grid-row: span 4;
 }
-.item-three {
-	grid-area : three;
+
+.item-four {
+  grid-column: span 2;
 }
-.item-four{
-	grid-area : four;
-}
+
 .item-five {
-	grid-area : five;
+  grid-column: span 2;
 }
-.item-six {
-	grid-area : six;
-}
-.item-seven {
-	grid-area : seven;
-}
-.item-eight {
-	grid-area : eight;
-}
-.item-nine {
-	grid-area : nine;
-}
+
 .item-ten {
-	grid-area : ten;
+  grid-column: span 3;
 }
-
-	
-	
-}
-
-
