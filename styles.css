@@ -1,34 +1,22 @@
+body {
+  margin: 0;
+}
+
 #grid {
   display: grid;
+  width: 1000px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 124px);
   gap: 10px;
 }
 
-/* base style */
 .item {
   background-color: green;
   color: white;
 }
 
-/* grid spans required by test */
-
-.item-one {
-  grid-column: span 4;
-}
-
-.item-two {
-  grid-row: span 4;
-}
-
-.item-four {
-  grid-column: span 2;
-}
-
-.item-five {
-  grid-column: span 2;
-}
-
-.item-ten {
-  grid-column: span 3;
-}
+.item-one { grid-column: span 4; }
+.item-two { grid-row: span 4; }
+.item-four { grid-column: span 2; }
+.item-five { grid-column: span 2; }
+.item-ten { grid-column: span 3; }
